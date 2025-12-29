@@ -47,8 +47,9 @@ jobs:
           pip install pytest
 
       - name: Run pytest
+        working-directory: TagStackoverflow
         run: |
-          pytest -q
+          python -m pytest -q
 
   deploy:
     name: Deploy to Heroku
