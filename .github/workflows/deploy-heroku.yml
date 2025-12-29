@@ -47,7 +47,6 @@ jobs:
           pip install pytest
 
       - name: Run pytest
-        working-directory: tagStackoverflow
         run: |
           python -m pytest -q
 
