@@ -1,12 +1,40 @@
+# requirements.txt
+# Liste des dépendances Python nécessaires pour le projet
+# Installation: pip install -r requirements.txt
+
+# Framework web pour l'API REST
 fastapi==0.115.6
+
+# Serveur ASGI pour exécuter l'application FastAPI
+# [standard] inclut les dépendances pour de meilleures performances (uvloop, etc.)
 uvicorn[standard]==0.32.1
+
+# Bibliothèque de validation de données et génération de schémas
 pydantic==2.10.3
+
+# Bibliothèque de sérialisation pour les modèles ML (compatible scikit-learn)
 joblib==1.4.2
+
+# Bibliothèque de machine learning (modèles, vectoriseurs, etc.)
 scikit-learn==1.5.2
+
+# Bibliothèque de calcul numérique (utilisée par scikit-learn et pandas)
 numpy==2.1.3
+
+# Bibliothèque de manipulation de données (utilisée dans le script de conversion)
 pandas==2.2.3
+
+# Bibliothèque scientifique (dépendance de scikit-learn)
 scipy==1.14.1
+
+# Bibliothèque HTTP pour les requêtes (téléchargement des modèles, appels API depuis Streamlit)
 requests==2.32.3
+
+# Framework pour l'interface utilisateur web interactive
 streamlit==1.41.1
+
+# Framework de tests unitaires
 pytest==8.3.4
+
+# Client HTTP moderne (utilisé par FastAPI TestClient pour les tests)
 httpx >= 0.27.2

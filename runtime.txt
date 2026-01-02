@@ -1,1 +1,4 @@
+# runtime.txt
+# Spécifie la version de Python à utiliser sur Heroku
+# Cette version doit être compatible avec toutes les dépendances du projet
 python-3.12.8
