@@ -152,7 +152,7 @@ Ces fichiers sont déposés dans le dossier cible (`models/`).
 
 ### Prérequis
 
-* Python ≥ 3.10
+* Python 3.12.8 (compatible avec Python ≥ 3.10)
 * `pip` ou `pipenv`
 * Les artefacts modèles présents dans `models/`
   *(ou une URL valide définie via `MODEL_BLOB_URL`)*
@@ -209,9 +209,10 @@ Objectifs :
 
 ### CI/CD
 
-* GitHub Actions
+* GitHub Actions (`.github/workflows/deploy-heroku.yml`)
+* Python 3.12 utilisé dans le pipeline CI/CD
 * Déploiement automatique après validation
-* Tests exécutés avant mise en production
+* Tests exécutés avant mise en production (build → tests → deploy)
 
 <br>
 
